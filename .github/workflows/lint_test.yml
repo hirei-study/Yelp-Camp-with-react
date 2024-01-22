@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Dependencies
+      - name: Install Dependency
         run: npm ci
 
       - name: Run Lint
