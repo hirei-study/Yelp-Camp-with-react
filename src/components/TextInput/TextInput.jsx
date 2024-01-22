@@ -1,8 +1,7 @@
-
-import { useState } from "react";
+import { useState } from 'react';
 
 const TextInput = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   const inputText = (e) => {
     setText(e.target.value);

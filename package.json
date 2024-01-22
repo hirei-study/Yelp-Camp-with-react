@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "test": "vitest watch",
     "coverage": "vitest run  --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -20,6 +22,14 @@
     "vite-jsconfig-paths": "^2.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-vite": "^7.6.10",
+    "@storybook/test": "^7.6.10",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
@@ -31,10 +41,13 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.6.15",
     "happy-dom": "^13.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.6.10",
     "vite": "^5.0.8",
     "vitest": "^1.2.1"
   },
@@ -43,5 +56,8 @@
       "prettier --write",
       "eslint --fix"
     ]
-  }
+  },
+  "ignorePatterns": [
+    "!.storybook"
+  ]
 }
